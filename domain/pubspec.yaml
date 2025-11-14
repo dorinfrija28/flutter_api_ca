@@ -1,0 +1,11 @@
+name: domain
+description: Domain layer containing entities, use cases, and repository interfaces
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter

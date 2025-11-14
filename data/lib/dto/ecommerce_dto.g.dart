@@ -1,0 +1,74 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'ecommerce_dto.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+EcommerceDto _$EcommerceDtoFromJson(Map<String, dynamic> json) => EcommerceDto(
+  header: HeaderDto.fromJson(json['header'] as Map<String, dynamic>),
+  sections: (json['sections'] as List<dynamic>)
+      .map((e) => SectionDto.fromJson(e as Map<String, dynamic>))
+      .toList(),
+);
+
+Map<String, dynamic> _$EcommerceDtoToJson(EcommerceDto instance) =>
+    <String, dynamic>{'header': instance.header, 'sections': instance.sections};
+
+HeaderDto _$HeaderDtoFromJson(Map<String, dynamic> json) => HeaderDto(
+  title: json['title'] as String,
+  bannerImage: json['bannerImage'] as String,
+);
+
+Map<String, dynamic> _$HeaderDtoToJson(HeaderDto instance) => <String, dynamic>{
+  'title': instance.title,
+  'bannerImage': instance.bannerImage,
+};
+
+SectionDto _$SectionDtoFromJson(Map<String, dynamic> json) => SectionDto(
+  title: json['title'] as String,
+  subtitle: json['subtitle'] as String,
+  items: (json['items'] as List<dynamic>)
+      .map((e) => SectionItemDto.fromJson(e as Map<String, dynamic>))
+      .toList(),
+);
+
+Map<String, dynamic> _$SectionDtoToJson(SectionDto instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'subtitle': instance.subtitle,
+      'items': instance.items,
+    };
+
+SectionItemDto _$SectionItemDtoFromJson(Map<String, dynamic> json) =>
+    SectionItemDto(
+      id: (json['id'] as num).toInt(),
+      brand: json['brand'] as String,
+      name: json['name'] as String,
+      image: json['image'] as String,
+      oldPrice: (json['oldPrice'] as num?)?.toDouble(),
+      newPrice: (json['newPrice'] as num?)?.toDouble(),
+      price: (json['price'] as num?)?.toDouble(),
+      discount: (json['discount'] as num?)?.toInt(),
+      rating: (json['rating'] as num).toDouble(),
+      reviews: (json['reviews'] as num).toInt(),
+      isNew: json['isNew'] as bool?,
+      isFavorite: json['isFavorite'] as bool,
+    );
+
+Map<String, dynamic> _$SectionItemDtoToJson(SectionItemDto instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'brand': instance.brand,
+      'name': instance.name,
+      'image': instance.image,
+      'oldPrice': instance.oldPrice,
+      'newPrice': instance.newPrice,
+      'price': instance.price,
+      'discount': instance.discount,
+      'rating': instance.rating,
+      'reviews': instance.reviews,
+      'isNew': instance.isNew,
+      'isFavorite': instance.isFavorite,
+    };
